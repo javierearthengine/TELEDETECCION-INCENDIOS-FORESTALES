@@ -1,0 +1,33 @@
+# .gitignore — Teledetección aplicada a incendios forestales
+# Se versiona CÓDIGO y DOCUMENTACIÓN; los datos viven en GEE Assets.
+
+# Credenciales y secretos
+.env
+.env.*
+*service-account*.json
+*-key.json
+*credentials*.json
+
+# Datos geoespaciales pesados (exportaciones de GEE descargadas)
+*.tif
+*.tiff
+*.img
+*.gdb/
+*.zip
+*.kmz
+data/
+datos/
+exports/
+salidas/
+
+# Las figuras de documentación sí se versionan
+!assets/
+!assets/**
+
+# Editores y sistema operativo
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+~$*
